@@ -69,7 +69,7 @@ const EmailSection = () => {
       </div>
       <div>
         {emailSubmitted ? (
-          <p className="text-secondary-500 text-sm mt-2">Email sent successfully!!</p>
+          <p className="text-secondary-500 text-sm mt-2">Email sent successfully!</p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
             <div className="mb-6">

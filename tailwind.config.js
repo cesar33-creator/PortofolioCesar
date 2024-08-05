@@ -1,13 +1,8 @@
-// tailwind.config.mjs
 import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       backgroundImage: {
@@ -17,8 +12,13 @@ const config = {
     },
     colors: {
       ...colors,
-      primary: colors.blue,
-      secondary: colors.blue,
+      primary: colors.blue, // Update this if you need specific shades
+      secondary: colors.blue, // Update this if you need specific shades
+      lightBlue: colors.sky, // Updated color name
+      warmGray: colors.stone, // Updated color name
+      trueGray: colors.neutral, // Updated color name
+      coolGray: colors.gray, // Updated color name
+      blueGray: colors.slate, // Updated color name
     },
   },
   plugins: [],
